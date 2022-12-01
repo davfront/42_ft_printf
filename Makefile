@@ -6,7 +6,7 @@
 #    By: dapereir <dapereir@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/10 11:45:20 by dapereir          #+#    #+#              #
-#    Updated: 2022/11/22 12:34:49 by dapereir         ###   ########.fr        #
+#    Updated: 2022/12/01 09:43:15 by dapereir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ SRCS			=	ft_printf.c\
 OBJS			=	$(SRCS:.c=.o)
 
 INCLUDES_DIR	=	.
-INCLUDES		=	${INCLUDES_DIR}/libftprintf.h
+INCLUDES		=	${INCLUDES_DIR}/ft_printf.h
 
 %.o:			%.c Makefile ${INCLUDES}
 				${CC} ${CFLAGS} -I ${INCLUDES_DIR} -c $< -o $@
